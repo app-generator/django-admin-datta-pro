@@ -53,7 +53,7 @@ $ pip install git+https://github.com/app-generator/priv-django-admin-datta-pro.g
 ```python
     INSTALLED_APPS = (
         ...
-        'admin_datta_pro.apps.AdminBerryProConfig',
+        'admin_datta_pro.apps.AdminDattaProConfig',
         'django.contrib.admin',
     )
 ```

@@ -153,7 +153,7 @@ For instance, if we want to customize the `index.html` these are the steps:
 - `Step 3`: copy the `index.html` from the original location (inside your ENV) and save it to the `YOUR_APP/templates` DIR
   - Source PATH: `<YOUR_ENV>/LIB/admin_datta_pro/templates/pages/index.html`
   - Destination PATH: `YOUR_APP/templates/pages/index.html`
-- Edit the footer (Destination PATH)    
+- Edit the `index` page (Destination PATH)    
 
 At this point, the default version of the `index.html` shipped in the library is ignored by Django.
 

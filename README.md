@@ -5,14 +5,15 @@ The product is designed to deliver the best possible user experience with highly
 
 > 👉 **NOTE**: This product `requires a License` in order to access the theme:
 
-**Private REPO**: `git+https://github.com/app-generator/priv-django-admin-berry-pro`
+**Private REPO**: `git+https://github.com/app-generator/priv-django-admin-datta-pro`
 
 <br />
 
 ## Features: 
 
 - **UI Kit**: Datta Able PRO `v1.0.2` by CodedThemes
-- [Django Datta PRO](https://appseed.us/product/datta-able-pro/django/) - `sample project`
+- [Django Able PRO](https://appseed.us/product/datta-able-pro/django/) - `Product` that uses the library
+  - `Features`: Fully-configured, `CI/CD` via Render
 - **Sections Covered**: 
   - `Admin Section`, reserved for `superusers`
   - `All pages` managed by `Django.contrib.AUTH`
@@ -109,5 +110,59 @@ Access the `admin` section in the browser: `http://127.0.0.1:8000/`
 
 <br />
 
+<br />
+
+## How to Customize 
+
+When a template file is loaded in the controller, `Django` scans all template directories starting from the ones defined by the user, and returns the first match or an error in case the template is not found. 
+The  theme used to style this starter provides the following files: 
+
+```bash
+# This exists in ENV: LIB/admin_datta_pro
+< UI_LIBRARY_ROOT >                      
+   |
+   |-- templates/                     # Root Templates Folder 
+   |    |          
+   |    |-- accounts/       
+   |    |    |-- auth-signin.html     # Sign IN Page
+   |    |    |-- auth-signup.html     # Sign UP Page
+   |    |
+   |    |-- includes/       
+   |    |    |-- footer.html          # Footer component
+   |    |    |-- sidebar.html         # Sidebar component
+   |    |    |-- navigation.html      # Navigation Bar
+   |    |    |-- scripts.html         # Scripts Component
+   |    |
+   |    |-- layouts/       
+   |    |    |-- base.html            # Masterpage
+   |    |    |-- base-auth.html       # Masterpage for Auth Pages
+   |    |
+   |    |-- pages/       
+   |         |-- index.html           # INDEX page
+   |         |-- dashboard/index.html # Main dashboard page
+   |         |-- widgets/data.html    # Widgets page
+   |         |-- *.html               # All other pages
+   |    
+   |-- ************************************************************************
+```
+
+When the project requires customization, we need to copy the original file that needs an update (from the virtual environment) and place it in the template folder using the same path. 
+
+For instance, if we want to customize the `footer.html` these are the steps:
+
+- `Step 1`: create the `templates` DIRECTORY inside your app 
+- `Step 2`: configure the project to use this new template directory
+  - Edit `settings.py` TEMPLATES section 
+- `Step 3`: copy the `footer.html` from the original location (inside your ENV) and save it to the `YOUR_APP/templates` DIR
+  - Source PATH: `<YOUR_ENV>/LIB/admin_datta_pro/includes/footer.html`
+  - Destination PATH: `YOUR_APP/templates/includes/footer.html`
+- Edit the footer (Destination PATH)    
+
+At this point, the default version of the `footer.html` shipped in the library is ignored by Django.
+
+In a similar way, all other files and components can be customized easily.
+
+<br />
+
 ---
-**[Django Admin Datta PRO](https://appseed.us/product/berry-dashboard-pro/django/)** - Modern Admin Interface provided by **[AppSeed](https://appseed.us/)**
+**[Django Admin Datta PRO](https://appseed.us/product/datta-able-pro/django/)** - Modern Admin Interface provided by **[AppSeed](https://appseed.us/)**

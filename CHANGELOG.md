@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.0.1] 2023-02-01
+### Changes
+
+- Templates, minor refactoring
+  - move content from `pages/pages` -> `pages` 
+
 ## [1.0.0] 2023-02-01
 ### Changes
 

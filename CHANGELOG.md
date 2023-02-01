@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.0.3] 2023-02-01
+### Changes
+
+- Fix `MIME type` for `chart.min.js`
+  - Used by `/charts/chartjs/`
+
 ## [1.0.2] 2023-02-01
 ### Changes
 

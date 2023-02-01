@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.0.2] 2023-02-01
+### Changes
+
+- JS File (minor update)
+  - `dashboard-custom.js`
+
 ## [1.0.1] 2023-02-01
 ### Changes
 

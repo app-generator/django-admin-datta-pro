@@ -110,8 +110,6 @@ Access the `admin` section in the browser: `http://127.0.0.1:8000/`
 
 <br />
 
-<br />
-
 ## How to Customize 
 
 When a template file is loaded in the controller, `Django` scans all template directories starting from the ones defined by the user, and returns the first match or an error in case the template is not found. 
